@@ -18,25 +18,33 @@
 <div class="border rounded">
 <h1>House Prediction</h1>
 </div>
-    <form action="/" method="POST">
+    <form action="predict_chance" method="GET">
+      {% csrf_token %}
   <div class="form-group">
     <label for="exampleFormControlInput1">Enter Area(ft/sq)</label>
     <input type="text" name="area" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">select City</label>
-    <select name="city" class="form-control" id="exampleFormControlSelect1">
-      <option>Delhi NCR</option>
-      <option>Gorakhpur</option>
-      <option>Lukhnow</option>
-      <option>Jaipur</option>
-      <option>Kota</option>
+    <select name="city" class="form-control" >
+      <option>Alaknanda</option>
+      <option>Budh Vihar</option>
+      <option>Chittaranjan Park</option>
+      <option>Dilshad Garden</option>
+      <option>Dwarka Sector</option>
+      <option>Kailash Colony</option>
+      <option>Lajpat Nagar</option>
+      <option>Laxmi Nagar</option>
+      <option>Rohini Sector</option>
+      <option>Saket</option>
+      <option>Sarita Vihar</option>
+      <option>Yamuna Vihar</option>
       
     </select>
   </div>
     <div class="form-group">
     <label for="exampleFormControlSelect1">select BHK</label>
-    <select name="bhk" class="form-control" id="exampleFormControlSelect1">
+    <select name="bhk" class="form-control" >
       <option>2</option>
       <option>3</option>
       <option>4</option>

@@ -1,8 +1,7 @@
-from django.contrib import admin
 from django.urls import path
 from . import views
 
-urlpatterns = [
+urlpatterns = {
     path('', views.index),
-    path('',views.predict_chance),
-]
+    path('predict_chance/', views.predict_chance)
+}
